@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Google Search test on Second Results Page in FireFox browser" verbose="1" >
+    <test name="Firefox browser" >
+        <parameter name="browserType" value ="Firefox"/>
+        <parameter name="urlType" value ="https://www.google.com"/>
+
+        <classes>
+            <class name="test.TestForSecondSearchResultPage" />
+        </classes>
+    </test>
+
+</suite>

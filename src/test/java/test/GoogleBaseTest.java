@@ -18,6 +18,7 @@ public class GoogleBaseTest {
      * opens defined environment link
      * @param browserType browser to be used for tests runs in TestNG xml (Firefox, Chrome)
      * @param urlType  url to start test page
+     *
      */
 
     @Parameters({"browserType","urlType"})

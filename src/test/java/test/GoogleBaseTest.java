@@ -41,7 +41,7 @@ public class GoogleBaseTest {
 
     /**
      * Runs after each test method
-     * closes browser page after test finished
+     * closes browser page when test is finished
      */
     @AfterMethod
     public void afterTest() { driver.close(); }

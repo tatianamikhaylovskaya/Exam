@@ -1,6 +1,7 @@
-About project:
+Exam Selenium Java project
 
-This project is for checking Google Search Results on first and second pages using Chrome and Firefox
+About project:
+This project is for checking Google Search Results on first and second pages using Chrome and Firefox browsers
 
 
 How to run tests from this project:

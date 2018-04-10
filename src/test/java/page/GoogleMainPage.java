@@ -7,9 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class GoogleMainPage extends GoogleBasePage {
+    /**
+     *  field for entering text for searching
+     */
     @FindBy(id = "lst-ib")
     private WebElement searchInputField;
 
+    /**
+     * Button clicking on which start search process
+     */
     @FindBy(name = "btnK")
     private WebElement searchInGoogleButton;
 

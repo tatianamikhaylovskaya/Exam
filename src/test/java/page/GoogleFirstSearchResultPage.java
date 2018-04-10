@@ -10,12 +10,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GoogleFirstSearchResultPage extends GoogleBasePage {
+    /**
+     * web elements with search results shown after search
+     */
     @FindBy(xpath = "//*[@class='srg']//h3/a")
     private List<WebElement> searchResults;
 
+    /**
+     * link clicking on which opens another page with search results
+     */
     @FindBy(id = "pnnext")
     private WebElement nextPageLink;
 
+    /**
+     *Web Element which shows number of search results
+     */
     @FindBy(id = "resultStats")
     private WebElement resutlsNumber;
 
@@ -30,7 +39,7 @@ public class GoogleFirstSearchResultPage extends GoogleBasePage {
     }
 
     /**
-     * Creates list of search results: scrolls all search results and addes text from each card title to the search results list
+     * Creates list of search results: scrolls all search results and adds text from each card title to the search results list
      * @return the list of search results
      */
     public List<String> getResults(){
@@ -45,7 +54,7 @@ public class GoogleFirstSearchResultPage extends GoogleBasePage {
     }
 
     /**
-     * Scrolls down еру зфпу and clicks on the link to open next page
+     * Scrolls down the page  and clicks on the link to open next page
      * @return  next page with Search results
      */
     public GoogleSecondSearchResultPage openNextPage(){

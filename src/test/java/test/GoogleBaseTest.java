@@ -40,6 +40,7 @@ public class GoogleBaseTest {
     }
 
     /**
+     * Runs after each test method
      * closes browser page after test finished
      */
     @AfterMethod
